@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Restaurante</title>
+</head>
+<body>
+    <header>
+        <img width="50" src="./miss-doces-logo.png" alt="">
+       
+        <nav>
+            <a href="#">Início     </a>
+            <a href="#">Cardápio   </a>
+            <a href="#">Avaliações </a>
+        </nav>
+        
+        <button>Peça aqui</button>
+    </header>
+
+    <section class="inicio">
+        <div class="description">
+            <h1>O sabor que vai <br> 
+                até <span>você</span>
+            </h1>
+            <p>Oferecemos uma variedade de opções de comida deliciosa.</p>
+            
+            <div class="group-btn1">
+                <a href="#">Ver cardápio</a>
+                <a href="#"> <i class="bi bi-telephone-inbound"></i> (62) 9999-9999</a>
+            </div>
+
+            <div class="group-btn2">
+                <button><i class="bi bi-instagram"></i></button>
+                <button><i class="bi bi-whatsapp"></i></button>
+                <button><i class="bi bi-facebook"></i></button>
+            </div>
+
+        </div>
+        <img src="https://restaurante-tau-six.vercel.app/src/images/hero.png" alt="">
+    </section>
+    <section class="cardapio"></section>
+    <section class="avaliacoes"></section>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        header{
+            color: #fff;
+            background-color: black;
+            width: 100vw;
+
+            padding: 10px 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        header a{
+            color: #fff;
+        }
+        header button{
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: none;
+            color: #fff;
+            background-color: goldenrod;
+            cursor: pointer;
+        }
+        header nav{
+            display: flex;
+            gap: 10px;
+        }
+        header nav a{
+            cursor: pointer;
+        }
+
+        .inicio{
+            padding: 20px 50px;
+            display: flex;
+        }
+        .description{
+            font-size: 2em;
+        }
+        .description span{
+            color: palevioletred;
+
+        }
+        .description p{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: .8em;
+        }
+        .inicio img{
+            background-color: palevioletred;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 70px;
+        }
+        .group-btn1{
+            
+        }
+        .group-btn1 a{
+            padding: 10px;
+            font-size: .7em;
+            color: #fff;
+            border-radius: 10px;
+            background-color: blueviolet;
+        }
+        .group-btn1 a i{
+            padding: 5px;
+            border-radius: 5px;
+            background-color: green;
+        }
+        .group-btn2{
+            margin-top: 10px;
+        }
+        .group-btn2 button{
+            border-radius: 7px;
+            border: 1px solid blueviolet;
+            padding: 7px;
+            cursor: pointer;
+
+            transition: .3s;
+        }
+        .group-btn2 button:hover{
+            color: white;
+            border: 1px solid #fff;
+            background-color: greenyellow;
+
+            transform: scale(1.09) rotate(10deg);
+        }
+        .group-btn2 button i{
+            color: blueviolet;
+        }
+    </style>
+</body>
+</html>
